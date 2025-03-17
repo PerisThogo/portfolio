@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4B0082, #8A2BE2);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.github-icon {
+    font-size: 1.8rem;
+    margin-right: 20px;
+}
+
+.github-icon a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.github-icon a:hover {
+    color: #FFD700;
+}
+
+
+/* Navigation */
+nav {
+    background-color: rgba(75, 0, 130, 0.9);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Home Section */
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0 50px;
+}
+
+.home-text {
+    max-width: 600px;
+}
+
+.home-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.home-text p {
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #4B0082;
+    padding: 12px 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: white;
+}
+
+/* Profile Image */
+.home-image img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.home-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(75, 0, 130, 0.9);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .home-content {
+        flex-direction: column;
+    }
+}
