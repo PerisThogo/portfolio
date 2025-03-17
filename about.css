@@ -21,7 +21,6 @@ body {
 /* GitHub Icon */
 .github-icon {
     font-size: 1.8rem;
-    margin-right: 20px;
 }
 
 .github-icon a {
@@ -49,7 +48,6 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 nav ul {
@@ -57,12 +55,14 @@ nav ul {
     display: flex;
     padding: 0;
     margin: 0;
-    justify-content: center; /* Center the navigation links */
-    flex: 1; /* Allow the ul to take up remaining space */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
 }
 
 nav ul li a {
