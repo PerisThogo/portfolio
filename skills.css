@@ -199,12 +199,12 @@ footer p {
 
 @media (max-width: 480px) {
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap; /* Allow links to wrap if necessary */
+        justify-content: center; /* Center the links */
     }
 
     nav ul li {
-        margin: 5px 0;
+        margin: 5px 10px; /* Adjust spacing for smaller screens */
     }
 
     #skills h2 {
