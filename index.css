@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #4B0082, #8A2BE2);
+    background: linear-gradient(135deg, #6a0dad, #9b59b6); /* Softer purple gradient */
     color: white;
     scroll-behavior: smooth;
 }
@@ -27,13 +27,12 @@ body {
 }
 
 .github-icon a:hover {
-    color: #FFD700;
+    color: #FFD700; /* Gold color on hover */
 }
-
 
 /* Navigation */
 nav {
-    background-color: rgba(75, 0, 130, 0.9);
+    background-color: rgba(106, 13, 173, 0.9); /* Semi-transparent dark purple */
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -53,6 +52,7 @@ nav ul {
     list-style: none;
     display: flex;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -67,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FFD700;
+    color: #FFD700; /* Gold color on hover */
 }
 
 /* Home Section */
@@ -95,8 +95,8 @@ nav ul li a:hover {
 
 .cta-button {
     display: inline-block;
-    background-color: #FFD700;
-    color: #4B0082;
+    background-color: #FFD700; /* Gold */
+    color: #6a0dad; /* Dark purple */
     padding: 12px 25px;
     margin-top: 15px;
     font-weight: bold;
@@ -106,7 +106,7 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: white;
+    background-color: white; /* White on hover */
 }
 
 /* Profile Image */
@@ -118,12 +118,12 @@ nav ul li a:hover {
 }
 
 .home-image img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 /* Footer */
 footer {
-    background-color: rgba(75, 0, 130, 0.9);
+    background-color: rgba(106, 13, 173, 0.9); /* Semi-transparent dark purple */
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
@@ -138,13 +138,14 @@ footer {
 }
 
 .social-icons a:hover {
-    color: #FFD700;
+    color: #FFD700; /* Gold color on hover */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     nav .container {
         flex-direction: column;
+        align-items: center;
     }
 
     nav ul {
@@ -159,5 +160,50 @@ footer {
 
     .home-content {
         flex-direction: column;
+    }
+
+    .home-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-text p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .home-image img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .home-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-text p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .home-image img {
+        max-width: 150px;
     }
 }
